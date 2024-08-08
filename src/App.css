@@ -1,0 +1,92 @@
+.formInput {
+  translate: 0 50em;
+}
+
+/* App.css */
+
+/* Styling umum */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Daftar tugas */
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.task-item.completed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.task-item.incomplete {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.task-item:hover {
+  transform: scale(1.02);
+}
+
+/* Tombol aksi */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.action-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.complete-button {
+  color: #007bff;
+}
+
+.complete-button.completed {
+  color: #28a745;
+}
+
+.complete-button.incomplete {
+  color: #007bff;
+}
+
+.delete-button {
+  color: #dc3545;
+}
+
+.delete-button:hover {
+  color: #c82333;
+}
+
+/* Ikon SVG */
+.bi {
+  vertical-align: middle;
+}
+
+.bi-check {
+  color: #28a745;
+}
+
+.bi-arrow-counterclockwise {
+  color: #007bff;
+}
+
+.bi-trash {
+  color: #dc3545;
+}

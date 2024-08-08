@@ -17,7 +17,7 @@ app.use(
 
 app.use(
   session({
-    secret: "admin123yuhucihuyadadeh!@$%^&*()_+{}:|?><?|][0-9a-fA-F]{1,10", // Replace with your session secret
+    secret: process.env.ADMIN_PASSWORD, // Replace with your session secret
     resave: false,
     saveUninitialized: false,
     cookie: { secure: false }, // Set to true if using HTTPS

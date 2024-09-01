@@ -139,6 +139,19 @@ input[type="checkbox"]:checked::before {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  .delete-button {
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .delete-button:hover {
+    background-color: darkred;
+  }
+
   transition: background-color 0.3s ease;
 }
 
@@ -184,4 +197,17 @@ li.completed {
   position: absolute;
   top: 20px;
   right: 20px;
+}
+
+.delete-button {
+  margin-left: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: darkred;
 }
